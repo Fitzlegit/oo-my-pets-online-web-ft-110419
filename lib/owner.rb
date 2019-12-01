@@ -7,14 +7,14 @@ class Owner
   @@all = []
 
   def initialize(name)
-    name(name)
+    @name = name
     @human = "human"
     @@all << self
     #binding.pry
   end
 
-  def name(name)
-    @name = name
+  def name
+    @name
   end
 
   def species
