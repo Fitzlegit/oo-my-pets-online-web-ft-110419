@@ -66,7 +66,7 @@ class Owner
     self.cats.each { |cat| cat.mood = "nervous" }
     binding.pry
   end
-  
+
 
   def list_pets
     p "I have #{dogs.size} dog(s), and #{cats.size} cat(s)."
