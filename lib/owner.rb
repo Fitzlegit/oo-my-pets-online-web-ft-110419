@@ -10,7 +10,7 @@ class Owner
     name
     @human = "human"
     @@all << self
-    binding.pry
+    #binding.pry
   end
 
   def name
