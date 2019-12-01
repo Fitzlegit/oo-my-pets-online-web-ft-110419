@@ -67,7 +67,7 @@ class Owner
   end
 
   def pets
-    pets = []
+    pets = {}
     pets << dogs
     pets << cats
     pets
