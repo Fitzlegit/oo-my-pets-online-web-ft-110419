@@ -1,3 +1,5 @@
+require 'pry'
+
 class Owner
   # code goes here
   attr_reader :name, :human
@@ -8,6 +10,7 @@ class Owner
     @name = name
     @human = "human"
     @@all << self
+    binding.pry
   end
 
   def name=(name)
