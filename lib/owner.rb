@@ -67,6 +67,9 @@ class Owner
     binding.pry
   end
 
+  def remove_owner
+    Dog.remove_instance_variable(:owner)
+  end
 
   def list_pets
     p "I have #{dogs.size} dog(s), and #{cats.size} cat(s)."
