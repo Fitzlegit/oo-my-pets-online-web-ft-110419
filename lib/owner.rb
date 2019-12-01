@@ -13,7 +13,7 @@ class Owner
     #binding.pry
   end
 
-  def name(name)
+  def name
     @name = name
   end
 
