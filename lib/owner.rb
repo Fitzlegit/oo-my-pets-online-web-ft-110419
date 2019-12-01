@@ -62,9 +62,15 @@ class Owner
   end
 
   def sell_pets
-    self.dogs.each { |dog| dog.mood = "nervous" }
-    self.cats.each { |cat| cat.mood = "nervous" }
+    self.pets.each { |pet| pet.mood = "nervous" }
     binding.pry
+  end
+
+  def pets
+    pets = []
+    pets << dogs
+    pets << cats
+    pets
   end
 
   def list_pets
