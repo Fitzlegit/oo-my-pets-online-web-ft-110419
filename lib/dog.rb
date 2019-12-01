@@ -24,5 +24,10 @@ class Dog
     @@all << self
   end
 
+  def delete_owner
+    binding.pry
+    self.owner.delete
+  end
+
 
 end
