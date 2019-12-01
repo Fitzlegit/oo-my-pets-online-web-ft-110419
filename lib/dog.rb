@@ -25,6 +25,7 @@ class Dog
   end
 
   def delete_owner
+    binding.pry
     remove_instance_variable(:@owner)
   end
 
