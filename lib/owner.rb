@@ -62,13 +62,14 @@ class Owner
   end
 
   def sell_pets
-    self.dogs.each { |dog| dog.mood = "nervous" }
-    self.cats.each { |cat| cat.mood = "nervous" }
-    binding.pry
+    self.pets.each do |pet| 
+      pet.mood = "nervous"
+      pet.owner = nil
+    end
   end
 
-  def remove_owner
-    Dog.remove_instance_variable(:owner)
+  def pets
+    pets = self.dogs + self.cats
   end
 
   def list_pets
