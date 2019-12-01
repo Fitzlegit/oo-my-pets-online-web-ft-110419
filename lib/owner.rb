@@ -63,7 +63,9 @@ class Owner
 
   def sell_pets
     self.dogs.each { |dog| dog.mood = "nervous" }
+    self.dogs.each { |dog| dog.delete_owner }
     self.cats.each { |cat| cat.mood = "nervous" }
+    
   end
 
   def list_pets
