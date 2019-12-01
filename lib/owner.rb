@@ -65,6 +65,7 @@ class Owner
     self.dogs.each { |dog| dog.mood = "nervous" }
     self.dogs.each { |dog| dog.delete_owner }
     self.cats.each { |cat| cat.mood = "nervous" }
+    self.cats.each { |cat| cat.delete_owner }
     binding.pry
   end
 
